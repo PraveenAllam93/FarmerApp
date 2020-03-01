@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/background_ui"
+    tools:context=".newUser">
+
+    <ImageView
+        android:id="@+id/iv_newProfile"
+        android:layout_width="170dp"
+        android:layout_height="179dp"
+        android:layout_gravity="center"
+        android:layout_margin="8dp"
+        app:srcCompat="@drawable/ic_profile" />
+
+
+    <EditText
+        android:id="@+id/Name_newProfile"
+        android:textStyle="bold|italic"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+
+        android:hint="Name"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/AadharNo_newProfile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold|italic"
+        android:layout_margin="8dp"
+
+        android:hint="Aadhar Number"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/address_newProfile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:textStyle="bold|italic"
+        android:hint="Address"
+        android:inputType="textPersonName" />
+
+    <Button
+        android:id="@+id/button_newProfile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:textStyle="italic"
+        android:textSize="20dp"
+android:background="@drawable/farmer_ui"
+        android:text="Done" />
+
+
+</LinearLayout>

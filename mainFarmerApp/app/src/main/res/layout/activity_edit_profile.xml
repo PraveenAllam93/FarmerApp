@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".editProfile"
+    android:background="@drawable/background_ui"
+    android:orientation="vertical">
+
+
+    <ImageView
+        android:id="@+id/iv_profile"
+        android:layout_width="170dp"
+        android:layout_height="179dp"
+        android:scaleType="fitXY"
+        android:layout_margin="8dp"
+        app:srcCompat="@drawable/ic_profile"
+        android:layout_gravity="center"/>
+
+    <EditText
+        android:id="@+id/Name_profile"
+        android:layout_width="match_parent"
+        android:layout_margin="8dp"
+
+        android:layout_height="wrap_content"
+        android:hint="Name"
+        android:textStyle="bold|italic"
+        android:inputType="textPersonName" />
+    <EditText
+        android:id="@+id/AadharNo_Profile"
+        android:layout_margin="8dp"
+        android:textStyle="bold|italic"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Aadhar Number"
+        android:inputType="number" />
+    <EditText
+        android:id="@+id/address_profile"
+        android:layout_margin="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Address"
+        android:textStyle="bold|italic"
+        android:inputType="textPersonName" />
+
+
+    <EditText
+        android:id="@+id/mobileNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:textStyle="bold|italic"
+        android:hint="Mobile Number."
+        android:inputType="number" />
+
+    <Button
+        android:id="@+id/button_profile"
+        android:layout_width="match_parent"
+        android:layout_margin="8dp"
+        android:textSize="20dp"
+        android:textStyle="italic|bold"
+        android:background="@drawable/farmer_ui"
+        android:layout_height="wrap_content"
+        android:text="Done" />
+
+</LinearLayout>
