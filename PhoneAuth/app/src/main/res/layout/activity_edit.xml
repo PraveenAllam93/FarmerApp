@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".edit">
+
+    <RelativeLayout
+        android:id="@+id/container_editProfile"
+        android:layout_width="415dp"
+        android:layout_height="729dp"
+        android:orientation="horizontal"
+        android:padding="20dp"
+        tools:layout_editor_absoluteX="-2dp"
+        tools:layout_editor_absoluteY="1dp">
+
+        <EditText
+            android:id="@+id/Name_editProfile"
+            android:layout_width="386dp"
+            android:layout_height="65dp"
+            android:layout_below="@id/iv_editProfile"
+            android:ems="10"
+            android:hint="Name"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/AadharNo_editProfile"
+            android:layout_width="380dp"
+            android:layout_height="59dp"
+            android:layout_below="@id/Name_editProfile"
+            android:layout_marginTop="17dp"
+            android:ems="10"
+            android:hint="Aadhar Number"
+            android:inputType="phone" />
+
+        <EditText
+            android:id="@+id/MobileNo_editProfile"
+            android:layout_width="395dp"
+            android:layout_height="65dp"
+            android:layout_below="@id/AadharNo_editProfile"
+            android:layout_marginTop="17dp"
+            android:ems="10"
+            android:hint="Mobile Number"
+            android:inputType="textPersonName" />
+
+        <Button
+            android:id="@+id/button_editProfile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/MobileNo_editProfile"
+            android:layout_centerHorizontal="true"
+            android:text="Done" />
+
+
+        <ImageView
+            android:id="@+id/iv_editProfile"
+            android:layout_width="170dp"
+            android:layout_height="179dp"
+            android:layout_alignParentTop="true"
+            android:layout_gravity="center"
+            android:layout_marginLeft="-102dp"
+            android:layout_marginTop="10dp"
+            android:scaleType="fitXY"
+            android:layout_centerHorizontal="true"
+            android:src="@mipmap/ic_launcher" />
+
+        <Button
+            android:id="@+id/btn_editProfile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/iv_editProfile"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="-51dp"
+            android:text="Tap"
+            android:layout_centerHorizontal="true"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+
+
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>

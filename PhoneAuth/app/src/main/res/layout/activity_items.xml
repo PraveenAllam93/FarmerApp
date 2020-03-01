@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".items">
+
+
+    <RelativeLayout
+        android:id="@+id/container_profile"
+        android:layout_width="415dp"
+        android:layout_height="729dp"
+        android:orientation="horizontal"
+        android:padding="20dp"
+        tools:layout_editor_absoluteX="-2dp"
+        tools:layout_editor_absoluteY="1dp">
+
+        <menu xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="378dp"
+            android:layout_height="44dp">
+
+            <item android:id="@+id/profileButton"
+                  android:title="Profile" />
+
+            <item android:id="@+id/postsButton"
+                  android:title="Posts" />
+
+            <item android:id="@+id/feedbackButton"
+                  android:title="Feedback" />
+
+            <item android:id="@+id/logoutButton"
+                  android:title="Log Out" />
+        </menu>
+
+
+        <ImageButton
+            android:id="@+id/fruits"
+            android:layout_width="411dp"
+            android:layout_height="204dp"
+            android:layout_below="@id/profileButton"
+            android:layout_marginTop="65dp"
+            app:srcCompat="@drawable/fruits"
+            tools:layout_editor_absoluteX="3dp"
+            tools:layout_editor_absoluteY="246dp" />
+
+        <ImageButton
+            android:id="@+id/riceItems"
+            android:layout_width="392dp"
+            android:layout_height="192dp"
+            android:layout_below="@id/fruits"
+            android:layout_marginTop="25dp"
+            app:srcCompat="@drawable/untitled"
+            tools:layout_editor_absoluteX="10dp"
+            tools:layout_editor_absoluteY="488dp" />
+
+        <ImageButton
+            android:id="@+id/vegetables"
+            android:layout_width="411dp"
+            android:layout_height="213dp"
+            android:layout_below="@+id/riceItems"
+            android:layout_marginTop="19dp"
+            app:srcCompat="@drawable/veg" />
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>

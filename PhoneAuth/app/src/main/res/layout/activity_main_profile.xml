@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".mainProfile">
+
+
+    <RelativeLayout
+        android:id="@+id/container_mainProfile"
+        android:layout_width="415dp"
+        android:layout_height="729dp"
+        android:orientation="horizontal"
+        android:padding="20dp"
+        tools:layout_editor_absoluteX="-2dp"
+        tools:layout_editor_absoluteY="1dp">
+
+        <TextView
+            android:id="@+id/Name_mainProfile"
+            android:layout_width="370dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/iv_mainProfile"
+            android:ems="10"
+            android:hint="Name"
+            android:inputType="textPersonName" />
+
+        <TextView
+            android:id="@+id/AadharNo_mainProfile"
+            android:layout_width="354dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/nameText"
+            android:layout_marginTop="36dp"
+            android:ems="10"
+            android:hint="Aadhar Number"
+            android:inputType="phone" />
+
+        <TextView
+            android:id="@+id/MobileNo_mainProfile"
+            android:layout_width="352dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/AadharText"
+            android:layout_marginTop="36dp"
+            android:ems="10"
+            android:hint="Mobile Number"
+            android:inputType="textPersonName" />
+
+        <Button
+            android:id="@+id/button_mainProfile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/MobileNo_mainProfile"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="50dp"
+            android:hint="To edit yout info."
+            android:text="Edit" />
+
+
+        <ImageView
+            android:id="@+id/iv_mainProfile"
+            android:layout_width="170dp"
+            android:layout_height="179dp"
+            android:layout_alignParentTop="true"
+            android:layout_gravity="center"
+            android:layout_marginLeft="-102dp"
+            android:layout_marginTop="10dp"
+            android:scaleType="fitXY"
+            android:layout_centerHorizontal="true"
+            android:src="@mipmap/ic_launcher" />
+
+        <EditText
+            android:id="@+id/mobileText"
+            android:layout_width="375dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/MobileNo_mainProfile"
+            android:layout_marginTop="1dp"
+            android:ems="10"
+            android:editable="false"
+            android:inputType="phone" />
+
+        <EditText
+            android:id="@+id/AadharText"
+            android:layout_width="375dp"
+            android:layout_height="wrap_content"
+            android:editable="false"
+            android:layout_below="@id/AadharNo_mainProfile"
+            android:ems="10"
+            android:inputType="number" />
+
+        <EditText
+            android:id="@+id/nameText"
+            android:layout_width="381dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/Name_mainProfile"
+            android:ems="10"
+            android:editable="false"
+            android:inputType="textPersonName" />
+
+
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>
